@@ -1,6 +1,6 @@
 # audio on asus e200ha
 
-to get audio on asus E200HA you need first the kernel 5.3:
+i have peppermint 10 and an asus E200HA so first you need first the kernel 5.3 and the extra modules:
 
 ```bash
 sudo apt-get install linux-headers-5.3.0-26-generic
@@ -47,6 +47,7 @@ i found that on another [repo](https://github.com/heikomat/linux/tree/cx2072x/cx
    sudo wget "https://raw.githubusercontent.com/heikomat/linux/cx2072x/cx2072x_fixes_and_manual/bytcht-cx2072x/HiFi.conf"
    sudo wget "https://raw.githubusercontent.com/heikomat/linux/cx2072x/cx2072x_fixes_and_manual/bytcht-cx2072x/bytcht-cx2072x.conf"
    ```
+   
 1. Set `realtime-scheduling = no` in `/etc/pulse/daemon.conf` (_see [this issue-comment](https://github.com/Grippentech/Asus-E200HA-Linux-Post-Install-Script/issues/29#issuecomment-355113121)_).
 
    This makes the pulseaudio daemon not die if the audio device is not found instantly
@@ -60,10 +61,9 @@ i found that on another [repo](https://github.com/heikomat/linux/tree/cx2072x/cx
    1. Make sure you edit the file as root, for example with `sudo nano /etc/pulse/daemon.conf`
    1. Change `; realtime-scheduling = yes` to `realtime-scheduling = no`
    1. **make sure you removed the `;` at the beginning of the line, this is important!**
+   
 1. Reboot
 
-
-
-
+   
 
 credits to [heikomat](https://github.com/heikomat) for the `.conf`
