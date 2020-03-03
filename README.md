@@ -1,6 +1,8 @@
 # audio on asus e200ha
 
-i have peppermint 10 and an asus E200HA so first you need first the kernel 5.3 and the extra modules:
+i have peppermint 10 and an asus E200HA so 
+
+to get the driver `bytcht-cx2072x`  (`cx2072x`) first you need first the kernel 5.3 and the extra modules:
 
 ```bash
 sudo apt-get install linux-headers-5.3.0-26-generic
