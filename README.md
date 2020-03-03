@@ -1,3 +1,5 @@
+# audio on asus e200ha
+
 to get audio on asus E200HA you need first the kernel 5.3:
 
 ```bash
@@ -17,13 +19,13 @@ neofetch
 inxi -F
 ```
 
-!["inxi -F"](inxi -F.png)
+!["inxi -F"](inxi_-F.png)
 
 ```bash
 aplay -l
 ```
 
-![aplay -l](aplay -l.png)
+![aplay -l](aplay_-l.png)
 
 
 
